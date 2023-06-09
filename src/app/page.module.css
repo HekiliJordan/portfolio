@@ -40,12 +40,3 @@
     font-weight: 300;
 }
 
-.button{
-    padding: 20px;
-    cursor: pointer;
-    background: #53c28b;
-    border: none;
-    border-radius: 5px;
-    width: max-content;
-    color: white;
-}
