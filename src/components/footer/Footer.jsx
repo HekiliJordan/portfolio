@@ -4,15 +4,14 @@ import styles from './footer.module.css';
 const Footer = () => {
     return (
         <div className={styles.container}>
-            <div >
                 <div>©2023 Key-Web . All rights reserved.</div>
-                <div >
-                    <Image src="/1.png" width={15} height={15} alt="Key-Web Facebook Account" />
-                    <Image src="/2.png" width={15} height={15} alt="Key-Web " />
-                    <Image src="/3.png" width={15} height={15} alt="Key-Web " />
-                    <Image src="/4.png" width={15} height={15} alt="Key-Web " />
+                <div className={styles.social} >
+                    <Image src="/1.png" width={15} height={15} className={styles.icon} alt="Key-Web Facebook Account" />
+                    <Image src="/2.png" width={15} height={15} className={styles.icon} alt="Key-Web " />
+                    <Image src="/3.png" width={15} height={15} className={styles.icon} alt="Key-Web " />
+                    <Image src="/4.png" width={15} height={15} className={styles.icon} alt="Key-Web " />
                 </div>
-            </div>
+
         </div>
     );
 };
