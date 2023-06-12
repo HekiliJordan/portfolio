@@ -1,22 +1,32 @@
 import mongoose from "mongoose";
 
-const {Schema} = mongoose
+const {Schema} = mongoose;
 
-const poseSchema = new Schema({
-        name: {
+const postSchema = new Schema(
+    {
+        title: {
             type: String,
-            unique: true,
             required: true,
         },
-        email: {
+        desc: {
             type: String,
-            unique: true,
             required: true,
         },
-        password: {
+        img: {
             type: String,
             required: true,
-        }
+        },
+        content: {
+            type: String,
+            required: true,
+        },
+        username: {
+            type: String,
+            required: true,
+        },
     },
     {timestamps: true}
-)
+);
+
+const Post = mongoose.models.Post || mongoose.model('modelName', postSchema)
+export default Post;
