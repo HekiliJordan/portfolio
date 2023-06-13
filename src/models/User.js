@@ -22,5 +22,5 @@ const userSchema = new Schema(
     {timestamps: true}
 );
 
-const User = mongoose.models.Post || mongoose.model('modelName', userSchema)
+const User = mongoose.models.User || mongoose.model('User', userSchema)
 export default User;
